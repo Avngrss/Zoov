@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20221016161418" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css?_v=20221016161418" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20221016161418" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?_v=20221016161418" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221016161418"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?_v=20221016161418"></script>
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css?_v=20221016161418" />
+    <title>Zooov</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="menu__items">
+            <div class="menu__logo">
+              <a href="#"
+                ><picture
+                  ><source srcset="./img/logo.webp" type="image/webp" />
+                  <img src="./img/logo.png" alt="logo" /></picture
+              ></a>
+            </div>
+            <div class="menu__header">
+              <div class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="menu">
+              <nav>
+                <li><a href="#barf">BARF</a></li>
+                <li><a href="#eat">Рационы</a></li>
+                <li><a href="#what__zoov">ZOOOV</a></li>
+                <li><a href="#what__zoov">О нас</a></li>
+                <li><a href="#get__section">Доставка</a></li>
+                <li><a href="#answer">FAQ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <button id="btn1" class="header__content-btn hide">Выбрать рацион</button>
+              </nav>
+            </div>
+          </div>
+          <div class="header__content">
+            <h1 class="header__content-title">Питание, <br />которое <span>полюбит</span> ваш хвостик</h1>
+            <p class="header__content-text">Натуральные рационы питания для собак по системе BARF</p>
+            <button id="btn" class="header__content-btn">Выбрать рацион</button>
+          </div>
+          <div class="wrapper__modal">
+            <div class="overlay"></div>
+            <div class="modal__window">
+              <div class="modal__content">
+                <div class="modal__finish">
+                  <button class="btn__close">X</button>
+                </div>
+                <h2 class="modal__content-title">Рассчет рациона</h2>
+                <p class="modal__content-text">
+                  Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона для вашего хвостика. Или напишите нам в мессендерах <span><a href="#">WhatsApp </a></span> и <span><a href="#">Telegram</a></span
+                  >.
+                </p>
+                <form class="modal__content-form">
+                  <div class="modal__content-form-check">
+                    <div class="radio">
+                      <input id="radio-1" name="radio" type="radio" checked />
+                      <label for="radio-1" class="radio-label">Взрослая собака</label>
+                    </div>
+                    <div class="radio">
+                      <input id="radio-2" name="radio" type="radio" />
+                      <label for="radio-2" class="radio-label">Щенок</label>
+                    </div>
+                  </div>
+                  <div class="modal__content-form-info">
+                    <input type="text" placeholder="4" />
+                    <input type="text" placeholder="Возраст" />
+                    <input type="text" placeholder="Порода собаки" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="tel" placeholder="Телефон" />
+                    <textarea cols="30" rows="4" placeholder="Если у вашего хвостика есть особенности здоровья – напишите об этом.."></textarea>
+                    <div class="modal__content-click">
+                      <input type="checkbox" id="fb" name="answer1" checked />
+                      <label for="fb"><span></span>Даю согласие на обработку персональных данных</label>
+                    </div>
+                    <button class="header__content-btn form__btn">Расчитать</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="barf" id="barf" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+          <div class="barf__content">
+            <div class="barf__content-text">
+              <h2>Что такое BARF</h2>
+              <p>BARF (Biologically Appropriate Raw Food) — система питания собак, основанная на сырых натуральных продуктах. Такой рацион максимально приближен к естественному пищевому поведению хищников, а значит биологически правилен.</p>
+              <h3>После перехода на питание по системе BARF у собак:</h3>
+              <ul>
+                <li>Нормализуется пищеварение</li>
+                <li>Проходят аллергические реакции</li>
+                <li>Прекращается образование зубного камня</li>
+                <li>Появляется больше энергии</li>
+                <li>Увеличивается продолжительность жизни</li>
+              </ul>
+            </div>
+            <div class="barf__content-img">
+              <picture
+                ><source srcset="./img/barfimg.webp" type="image/webp" />
+                <img src="./img/barfimg.jpeg" alt="dog-BARF"
+              /></picture>
+            </div>
+          </div>
+          <!-- slider -->
+          <div class="barf__content-slider barf__content-table hiden">
+            <div class="owl-carousel owl-theme slide-one">
+              <div class="barf__content-table-1">
+                <h4 class="barf__content-table-title">Для взрослых</h4>
+                <div class="barf__content-table-1-content">
+                  <div class="barf__content-table-item">
+                    <div class="meat">Мясо – 70%</div>
+                    <div class="sub">Субпродукты – 5%</div>
+                  </div>
+                  <div class="barf__content-table-item">
+                    <div class="bone">Кости – 10%</div>
+                    <div class="nuts">Семена/Орехи – 2%</div>
+                  </div>
+                  <div class="barf__content-table-item">
+                    <div class="vegetable">Овощи – 7%</div>
+                    <div class="fruits">Фрукты – 1%</div>
+                  </div>
+                  <div class="barf__content-table-item">
+                    <div class="liver">Печень – 5%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="barf__content-table-2">
+                <h4 class="barf__content-table-title">Для щенков</h4>
+                <div class="barf__content-table-1">
+                  <div class="barf__content-table-item">
+                    <div class="meat">Мясо – 50%</div>
+                    <div class="sub">Субпродукты – 7%</div>
+                  </div>
+                  <div class="barf__content-table-item">
+                    <div class="bone">Кости – 17%</div>
+                    <div class="nuts">Семена/Орехи – 3%</div>
+                  </div>
+                  <div class="barf__content-table-item">
+                    <div class="vegetable">Овощи – 7%</div>
+                    <div class="fruits">Фрукты – 1%</div>
+                  </div>
+                  <div class="barf__content-table-item">
+                    <div class="liver">Печень – 7%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slider end -->
+          <div class="barf__content-table">
+            <div class="barf__content-table-1">
+              <h4 class="barf__content-table-title">Для взрослых</h4>
+              <div class="barf__content-table-1-content">
+                <div class="barf__content-table-item">
+                  <div class="meat">Мясо – 70%</div>
+                  <div class="sub">Субпродукты – 5%</div>
+                </div>
+                <div class="barf__content-table-item">
+                  <div class="bone">Кости – 10%</div>
+                  <div class="nuts">Семена/Орехи – 2%</div>
+                </div>
+                <div class="barf__content-table-item">
+                  <div class="vegetable">Овощи – 7%</div>
+                  <div class="fruits">Фрукты – 1%</div>
+                </div>
+                <div class="barf__content-table-item">
+                  <div class="liver">Печень – 5%</div>
+                </div>
+              </div>
+            </div>
+            <div class="barf__content-table-2">
+              <h4 class="barf__content-table-title">Для щенков</h4>
+              <div class="barf__content-table-1-content">
+                <div class="barf__content-table-item">
+                  <div class="meat">Мясо – 50%</div>
+                  <div class="sub">Субпродукты – 7%</div>
+                </div>
+                <div class="barf__content-table-item">
+                  <div class="bone">Кости – 17%</div>
+                  <div class="nuts">Семена/Орехи – 3%</div>
+                </div>
+                <div class="barf__content-table-item">
+                  <div class="vegetable">Овощи – 7%</div>
+                  <div class="fruits">Фрукты – 1%</div>
+                </div>
+                <div class="barf__content-table-item">
+                  <div class="liver">Печень – 7%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="kit" id="kit" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-fluid kit-container">
+          <div class="container">
+            <div class="kit__info">
+              <h2 class="kit__title"><span>Пробные</span>наборы от ZOOOV</h2>
+              <p class="kit__text">Порой очень сложно определиться с выбором и хочется попробовать всё и сразу. Ваш хвостик может попробовать разные вкусы и определится что ему больше нравится.</p>
+            </div>
+            <div class="kit__order">
+              <div class="kit__col" data-aos="flip-up" data-aos-duration="1000">
+                <span class="dog__height">Для собак до 10кг</span>
+                <picture
+                  ><source srcset="./img/dog1.webp" type="image/webp" />
+                  <img src="./img/dog1.jpeg" alt="dog"
+                /></picture>
+                <h4 class="kit__col-title">Набор M</h4>
+                <p class="kit__col-text">4 шт. – баранина/кролик</p>
+                <p class="kit__col-text">3 шт. – говядина/индейка</p>
+                <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+                <span class="kit__col-price kit__col-price-through">2 423.</span>
+                <span class="kit__col-price kit__col-price-bold">1 680</span>
+                <button id="open1" class="order__btn">Заказать</button>
+              </div>
+              <div class="kit__col" data-aos="flip-up" data-aos-duration="1000">
+                <span class="dog__height">Для собак до 20кг</span>
+                <picture
+                  ><source srcset="./img/dog2.webp" type="image/webp" />
+                  <img src="./img/dog2.jpeg" alt="dog"
+                /></picture>
+                <h4 class="kit__col-title">Набор L</h4>
+                <p class="kit__col-text">4 шт. – баранина/кролик</p>
+                <p class="kit__col-text">3 шт. – говядина/индейка</p>
+                <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+                <span class="kit__col-price kit__col-price-through">3 983.</span>
+                <span class="kit__col-price kit__col-price-bold">2 770.</span>
+                <button id="open3" class="order__btn">Заказать</button>
+              </div>
+              <div class="kit__col" data-aos="flip-up" data-aos-duration="1000">
+                <span class="dog__height">Для собак до 30кг</span>
+                <picture
+                  ><source srcset="./img/dog3.webp" type="image/webp" />
+                  <img src="./img/dog3.jpeg" alt="dog"
+                /></picture>
+                <h4 class="kit__col-title">Набор XL</h4>
+                <p class="kit__col-text">4 шт. – баранина/кролик</p>
+                <p class="kit__col-text">3 шт. – говядина/индейка</p>
+                <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+                <span class="kit__col-price kit__col-price-through">5 437.</span>
+                <span class="kit__col-price kit__col-price-bold">3 810.</span>
+                <button id="open4" class="order__btn">Заказать</button>
+              </div>
+              <div class="kit__col kit__col-color" data-aos="flip-up" data-aos-duration="1000">
+                <h4 class="kit-col-info-title">Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</h4>
+                <button id="open" class="kit-col-info-btn">Расчитать</button>
+                <picture
+                  ><source srcset="./img/apple_kit.webp" type="image/webp" />
+                  <img class="kit__col-img" src="./img/apple_kit.png" alt="apple"
+                /></picture>
+              </div>
+            </div>
+            <!-- slider 2 -->
+            <div class="owl-carousel slide-two hiden">
+              <div class="item">
+                <div class="kit__col">
+                  <span class="dog__height">Для собак до 10кг</span>
+                  <picture
+                    ><source srcset="./img/dog1.webp" type="image/webp" />
+                    <img src="./img/dog1.jpeg" alt="dog"
+                  /></picture>
+                  <h4 class="kit__col-title">Набор M</h4>
+                  <p class="kit__col-text">4 шт. – баранина/кролик</p>
+                  <p class="kit__col-text">3 шт. – говядина/индейка</p>
+                  <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+                  <span class="kit__col-price kit__col-price-through">2 423.</span>
+                  <span class="kit__col-price kit__col-price-bold">1 680</span>
+                  <button class="order__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="item">
+                <div class="kit__col">
+                  <span class="dog__height">Для собак до 20кг</span>
+                  <picture
+                    ><source srcset="./img/dog2.webp" type="image/webp" />
+                    <img src="./img/dog2.jpeg" alt="dog"
+                  /></picture>
+                  <h4 class="kit__col-title">Набор L</h4>
+                  <p class="kit__col-text">4 шт. – баранина/кролик</p>
+                  <p class="kit__col-text">3 шт. – говядина/индейка</p>
+                  <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+                  <span class="kit__col-price kit__col-price-through">3 983.</span>
+                  <span class="kit__col-price kit__col-price-bold">2 770.</span>
+                  <button class="order__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="item">
+                <div class="kit__col">
+                  <span class="dog__height">Для собак до 30кг</span>
+                  <picture
+                    ><source srcset="./img/dog3.webp" type="image/webp" />
+                    <img src="./img/dog3.jpeg" alt="dog"
+                  /></picture>
+                  <h4 class="kit__col-title">Набор XL</h4>
+                  <p class="kit__col-text">4 шт. – баранина/кролик</p>
+                  <p class="kit__col-text">3 шт. – говядина/индейка</p>
+                  <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+                  <span class="kit__col-price kit__col-price-through">5 437.</span>
+                  <span class="kit__col-price kit__col-price-bold">3 810.</span>
+                  <button class="order__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="item">
+                <div class="kit__col kit__col-color">
+                  <h4 class="kit-col-info-title">Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</h4>
+                  <button class="kit-col-info-btn">Расчитать</button>
+                  <picture
+                    ><source srcset="./img/apple_kit.webp" type="image/webp" />
+                    <img class="kit__col-img" src="./img/apple_kit.png" alt="apple"
+                  /></picture>
+                </div>
+              </div>
+            </div>
+            <!-- slider2 end -->
+            <dialog id="dialog1">
+              <div class="modal__content">
+                <div class="modal__finish">
+                  <button id="close" class="btn__close">X</button>
+                </div>
+                <h2 class="modal__content-title">Рассчет рациона</h2>
+                <p class="modal__content-text">
+                  Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона для вашего хвостика. Или напишите нам в мессендерах <span><a href="#">WhatsApp </a></span> и <span><a href="#">Telegram</a></span
+                  >.
+                </p>
+                <form class="modal__content-form">
+                  <div class="modal__content-form-check">
+                    <div class="radio">
+                      <input id="radio-3" name="radio" type="radio" checked />
+                      <label for="radio-3" class="radio-label">Взрослая собака</label>
+                    </div>
+                    <div class="radio">
+                      <input id="radio-4" name="radio" type="radio" />
+                      <label for="radio-4" class="radio-label">Щенок</label>
+                    </div>
+                  </div>
+                  <div class="modal__content-form-info">
+                    <input type="text" placeholder="4" />
+                    <input type="text" placeholder="Возраст" />
+                    <input type="text" placeholder="Порода собаки" />
+                    <input type="text" placeholder="Ваше имя" />
+                    <input type="tel" placeholder="Телефон" />
+                    <textarea cols="30" rows="4" placeholder="Если у вашего хвостика есть особенности здоровья – напишите об этом.."></textarea>
+                    <div class="modal__content-click">
+                      <input type="checkbox" id="fbb" name="answer1" checked />
+                      <label for="fbb"><span></span>Даю согласие на обработку персональных данных</label>
+                    </div>
+                    <button class="header__content-btn form__btn">Расчитать</button>
+                  </div>
+                </form>
+              </div>
+            </dialog>
+            <dialog id="dialog2" class="dialog__one">
+              <div class="dialog__one-btn">
+                <button id="close1" class="btn__close btn__close-one">X</button>
+              </div>
+              <h4 class="dialog__title">Набор М</h4>
+              <span class="dog__height dog__height-one">Для собак до 10кг</span>
+              <picture
+                ><source srcset="./img/dog1.webp" type="image/webp" />
+                <img src="./img/dog1.jpeg" alt="dog"
+              /></picture>
+              <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+              <div class="dialog__items">
+                <details>
+                  <summary>Баранина/Кролик</summary>
+                  <p class="dialog__item">Состав: Мякоть баранины (46,5%), мясо кролика (23,5%), костикролика (10%), печень баранины (5%), почки бараньи (2,5%),рубец бараний (2,5%), кабачок (3%), брокколи (3%), семенаконопли (2%), шпинат (1%), яблоко (1%), льняное масло,конопляное масло.</p>
+                </details>
+                <span>4 шт</span>
+              </div>
+              <div class="dialog__items">
+                <details>
+                  <summary>Говядина/Индейка</summary>
+                  <p class="dialog__item">Состав: Мякоть баранины (46,5%), мясо кролика (23,5%), костикролика (10%), печень баранины (5%), почки бараньи (2,5%),рубец бараний (2,5%), кабачок (3%), брокколи (3%), семенаконопли (2%), шпинат (1%), яблоко (1%), льняное масло,конопляное масло.</p>
+                </details>
+                <span>3 шт</span>
+              </div>
+              <form class="kit__form">
+                <input type="text" placeholder="Имя" />
+                <input type="tel" placeholder="Телефон" />
+                <input type="text" placeholder="Адрес" />
+                <div class="kit__form-price">
+                  <span class="kit__col-price kit__col-price-through">2 423.</span>
+                  <span class="kit__col-price kit__col-price-bold">1 680.</span>
+                </div>
+                <div class="modal__content-click kit__form-text">
+                  <input type="checkbox" id="fbbs" name="answer1" checked />
+                  <label for="fbbs"><span></span>Даю согласие на обработку персональных данных</label>
+                </div>
+                <button class="order__btn">Оформить заказ</button>
+              </form>
+            </dialog>
+            <dialog id="dialog3" class="dialog__one">
+              <div class="dialog__one-btn">
+                <button id="close3" class="btn__close btn__close-one">X</button>
+              </div>
+              <h4 class="dialog__title">Набор М</h4>
+              <span class="dog__height dog__height-one">Для собак до 20кг</span>
+              <picture
+                ><source srcset="./img/dog2.webp" type="image/webp" />
+                <img src="./img/dog2.jpeg" alt="dog"
+              /></picture>
+              <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+              <div class="dialog__items">
+                <details>
+                  <summary>Баранина/Кролик</summary>
+                  <p class="dialog__item">Состав: Мякоть баранины (46,5%), мясо кролика (23,5%), костикролика (10%), печень баранины (5%), почки бараньи (2,5%),рубец бараний (2,5%), кабачок (3%), брокколи (3%), семенаконопли (2%), шпинат (1%), яблоко (1%), льняное масло,конопляное масло.</p>
+                </details>
+                <span>4 шт</span>
+              </div>
+              <div class="dialog__items">
+                <details>
+                  <summary>Говядина/Индейка</summary>
+                  <p class="dialog__item">Состав: Мякоть баранины (46,5%), мясо кролика (23,5%), костикролика (10%), печень баранины (5%), почки бараньи (2,5%),рубец бараний (2,5%), кабачок (3%), брокколи (3%), семенаконопли (2%), шпинат (1%), яблоко (1%), льняное масло,конопляное масло.</p>
+                </details>
+                <span>3 шт</span>
+              </div>
+              <form class="kit__form">
+                <input type="text" placeholder="Имя" />
+                <input type="tel" placeholder="Телефон" />
+                <input type="text" placeholder="Адрес" />
+                <div class="kit__form-price">
+                  <span class="kit__col-price kit__col-price-through">3 983.</span>
+                  <span class="kit__col-price kit__col-price-bold">2 770.</span>
+                </div>
+                <div class="modal__content-click kit__form-text">
+                  <input type="checkbox" id="fbbss" name="answer1" checked />
+                  <label for="fbbss"><span></span>Даю согласие на обработку персональных данных</label>
+                </div>
+                <button class="order__btn">Оформить заказ</button>
+              </form>
+            </dialog>
+            <dialog id="dialog4" class="dialog__one">
+              <div class="dialog__one-btn">
+                <button id="close4" class="btn__close btn__close-one">X</button>
+              </div>
+              <h4 class="dialog__title">Набор М</h4>
+              <span class="dog__height dog__height-one">Для собак до 20кг</span>
+              <picture
+                ><source srcset="./img/dog3.webp" type="image/webp" />
+                <img src="./img/dog3.jpeg" alt="dog"
+              /></picture>
+              <p class="kit__col-height">Вес каждой упаковки – 300г</p>
+              <div class="dialog__items">
+                <details>
+                  <summary>Баранина/Кролик</summary>
+                  <p class="dialog__item">Состав: Мякоть баранины (46,5%), мясо кролика (23,5%), костикролика (10%), печень баранины (5%), почки бараньи (2,5%),рубец бараний (2,5%), кабачок (3%), брокколи (3%), семенаконопли (2%), шпинат (1%), яблоко (1%), льняное масло,конопляное масло.</p>
+                </details>
+                <span>4 шт</span>
+              </div>
+              <div class="dialog__items">
+                <details>
+                  <summary>Говядина/Индейка</summary>
+                  <p class="dialog__item">Состав: Мякоть баранины (46,5%), мясо кролика (23,5%), костикролика (10%), печень баранины (5%), почки бараньи (2,5%),рубец бараний (2,5%), кабачок (3%), брокколи (3%), семенаконопли (2%), шпинат (1%), яблоко (1%), льняное масло,конопляное масло.</p>
+                </details>
+                <span>3 шт</span>
+              </div>
+              <form class="kit__form">
+                <input type="text" placeholder="Имя" />
+                <input type="tel" placeholder="Телефон" />
+                <input type="text" placeholder="Адрес" />
+                <div class="kit__form-price">
+                  <span class="kit__col-price kit__col-price-through">2 423.</span>
+                  <span class="kit__col-price kit__col-price-bold">1 680.</span>
+                </div>
+                <div class="modal__content-click kit__form-text">
+                  <input type="checkbox" id="fbbsk" name="answer1" checked />
+                  <label for="fbbsk"><span></span>Даю согласие на обработку персональных данных</label>
+                </div>
+                <button class="order__btn">Оформить заказ</button>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </section>
+      <section class="eat" id="eat" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+          <div class="kit__info">
+            <h2 class="kit__title">Рационы <span>ZOOOV</span></h2>
+            <p class="kit__text kit__text-width">Система питания взрослой собаки не подойдет для щенка, поэтому мы создали разные по составу рационы ZOOOV. Вы сможете заказать полноценное питание исходя из возраста, веса и даже вкусовых предпочтений вашего друга. ZOOOV заботится о каждой собаке.</p>
+          </div>
+          <div class="owl-carousel slide-three kit__order" data-aos-duration="1000">
+            <div class="eat__item" data-aos="zoom-in">
+              <picture
+                ><source srcset="./img/eatphoto.webp" type="image/webp" />
+                <img src="./img/eatphoto.png" alt="img"
+              /></picture>
+              <h4 class="eat__item-title">Для взрослых собак</h4>
+              <p class="eat__item-subtitle">Индейка/Говядина</p>
+              <p class="eat__item-text">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+              <p class="eat__item-number">700г / 500г / 300г / 150г / 100г</p>
+              <button class="order__btn">Заказать</button>
+            </div>
+            <div class="eat__item">
+              <div class="eat__item" data-aos="zoom-in" data-aos-duration="1000">
+                <picture
+                  ><source srcset="./img/eatphoto1.webp" type="image/webp" />
+                  <img src="./img/eatphoto1.png" alt="img"
+                /></picture>
+                <h4 class="eat__item-title">Для щенков</h4>
+                <p class="eat__item-subtitle">Индейка/Говядина</p>
+                <p class="eat__item-text">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+                <p class="eat__item-number">700г / 500г / 300г / 150г / 100г</p>
+                <button class="order__btn">Заказать</button>
+              </div>
+            </div>
+            <div class="eat__item">
+              <div class="eat__item" data-aos="zoom-in" data-aos-duration="1000">
+                <picture
+                  ><source srcset="./img/eatphoto2.webp" type="image/webp" />
+                  <img src="./img/eatphoto2.png" alt="img"
+                /></picture>
+                <h4 class="eat__item-title">Для взрослых собак</h4>
+                <p class="eat__item-subtitle">Индейка/Говядина</p>
+                <p class="eat__item-text">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+                <p class="eat__item-number">700г / 500г / 300г / 150г / 100г</p>
+                <button class="order__btn">Заказать</button>
+              </div>
+            </div>
+            <div class="eat__item" data-aos="zoom-in" data-aos-duration="1000">
+              <div class="eat__item">
+                <picture
+                  ><source srcset="./img/eatphoto3.webp" type="image/webp" />
+                  <img src="./img/eatphoto3.png" alt="img"
+                /></picture>
+                <h4 class="eat__item-title">Для щенков</h4>
+                <p class="eat__item-subtitle">Индейка/Говядина</p>
+                <p class="eat__item-text">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+                <p class="eat__item-number">700г / 500г / 300г / 150г / 100г</p>
+                <button class="order__btn">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="normal" id="normal" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-fluid kit-container">
+          <div class="container">
+            <h4 class="normal__title">Рекомендованные нормы кормления</h4>
+            <div class="normal__content">
+              <div class="normal__big-dog">
+                <h5>ДЛЯ ВЗРОСЛЫХ СОБАК</h5>
+                <p>от 1 года</p>
+                <div class="dog-table">
+                  <div class="dog__table-items">
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__title">Вес собаки</div>
+                      <div class="dog-table-item__title">Суточная норма</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">5кг</div>
+                      <div class="dog-table-item__normal">100 - 150гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">7кг</div>
+                      <div class="dog-table-item__normal">140 - 210гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">10кг</div>
+                      <div class="dog-table-item__normal">200 - 300гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">12кг</div>
+                      <div class="dog-table-item__normal">240 - 360гр</div>
+                    </div>
+                  </div>
+                  <div class="dog__table-items">
+                    <div class="dog-table-item hid">
+                      <div class="dog-table-item__title">Вес собаки</div>
+                      <div class="dog-table-item__title">Суточная норма</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">15кг</div>
+                      <div class="dog-table-item__normal">100 - 150гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">17кг</div>
+                      <div class="dog-table-item__normal">140 - 210гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">20кг</div>
+                      <div class="dog-table-item__normal">200 - 300гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">25кг</div>
+                      <div class="dog-table-item__normal">240 - 360гр</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dog__table-text dblock hiddens">
+                <p><span>Суточная норма кормления</span> составляет <span>2-3%*</span> от <span>идеального</span> веса собаки.</p>
+              </div>
+              <div class="normal__small-dog">
+                <h5>ДЛЯ ЩЕНКОВ</h5>
+                <p>от 1 года</p>
+                <div class="dog-table">
+                  <div class="dog__table-items">
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__title">Вес собаки</div>
+                      <div class="dog-table-item__title">Суточная норма</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">2кг</div>
+                      <div class="dog-table-item__normal">100гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">5кг</div>
+                      <div class="dog-table-item__normal">250гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">7кг</div>
+                      <div class="dog-table-item__normal">350гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">10кг</div>
+                      <div class="dog-table-item__normal">500гр</div>
+                    </div>
+                  </div>
+                  <div class="dog__table-items">
+                    <div class="dog-table-item hid">
+                      <div class="dog-table-item__title">Вес собаки</div>
+                      <div class="dog-table-item__title">Суточная норма</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">12кг</div>
+                      <div class="dog-table-item__normal">600гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">15кг</div>
+                      <div class="dog-table-item__normal">750гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">17кг</div>
+                      <div class="dog-table-item__normal">850гр</div>
+                    </div>
+                    <div class="dog-table-item">
+                      <div class="dog-table-item__weight">20кг</div>
+                      <div class="dog-table-item__normal">1000гр</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dog__table-text">
+              <p class="hid"><span>Суточная норма кормления</span> составляет <span>2-3%*</span> от <span>идеального</span> веса собаки.</p>
+              <p><span>Суточная норма кормления</span> составляет <span>5%*</span> от <span>идеального</span> веса собаки.</p>
+            </div>
+            <p class="normal__content-text">*Общие рекомендации. Некоторым собакам нужен бОльший % в зависимости от их активности и индивидуальных особенностей организма.</p>
+          </div>
+        </div>
+      </section>
+      <section class="what__zoov" id="what__zoov" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+          <h2 class="what__zoov-title">Почему ZOOOV</h2>
+          <div class="what__zoov-content">
+            <div class="what__zoov-content-items">
+              <picture
+                ><source srcset="./img/Leaf.webp" type="image/webp" />
+                <img src="./img/Leaf.png" alt="leaf"
+              /></picture>
+              <h5>Натурально</h5>
+              <p>Все продукты тщательно отбираем у проверенных поставщиков.</p>
+            </div>
+            <div class="what__zoov-content-items">
+              <picture
+                ><source srcset="./img/Heartbeat.webp" type="image/webp" />
+                <img src="./img/Heartbeat.png" alt="Heartbeat"
+              /></picture>
+              <h5>Здорово</h5>
+              <p>Система питания, которая продлевает жизнь</p>
+            </div>
+            <div class="what__zoov-content-items">
+              <picture
+                ><source srcset="./img/PawPrint.webp" type="image/webp" />
+                <img src="./img/PawPrint.png" alt="PawPrint"
+              /></picture>
+              <h5>Сбалансированно</h5>
+              <p>Сделайте заказ на сайтеи с вами свяжется наш менеджер для уточнения деталей.</p>
+            </div>
+            <div class="what__zoov-content-items">
+              <picture
+                ><source srcset="./img/Smiley.webp" type="image/webp" />
+                <img src="./img/Smiley.png" alt="Smiley"
+              /></picture>
+              <h5>Удобно</h5>
+              <p>Достаточно разморозить порцию ZOOOV, удалить отрывную крышку с лотка и обед для вашего питомца готов.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="love-zoov" id="love-zoov" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-fluid kit-container">
+          <div class="container">
+            <div class="love-zoov__content">
+              <div class="love-zoov__content-img">
+                <picture
+                  ><source srcset="./img/doglove.webp" type="image/webp" />
+                  <img src="./img/doglove.jpeg" alt="dog"
+                /></picture>
+              </div>
+              <div class="love-zoov__content-text">
+                <h3>С заботой и любовь от Zooov</h3>
+                <p>Мы сами владельцы собак и знаем, как важно правильное и качественное питание для долгой и счастливой жизни вашего питомца. Для нас ZOOOV это не просто бизнес, это наш вклад в повышение качества жизни всех собак.</p>
+                <p>Мы знаем, как правильно подобрать и переработать мясо, субпродукты, овощи и фрукты, чтобы питание вашего питомца было максимально сбалансированным и полезным.</p>
+                <p>Обычного сырого мяса из магазина будет недостаточно для полноценного питания собаки. ZOOOV — экономия времени, вам не придется искать необходимые составляющие для рациона.</p>
+                <p>Мы сами отбираем мясо, кости, легкие, печень и другие говяжьи, кроличьи и птичьи субпродукты у проверенных поставщиков. Закупаем органические овощи и используем разнообразные масла, такие как конопляное и льняное.</p>
+                <p>ZOOOV — это удобно, мы доставляем готовый рацион на две недели уже смешанным, расфасованным и упакованным в порционные лотки,готовыми к заморозке. За два часа до кормления достаточно переместить контейнер из морозилки в холодильник для ПРАВИЛЬНОЙ разморозки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get__section" id="get__section" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+          <h2 class="what__zoov-title">Как получить ZOOOV?</h2>
+          <div class="get__content">
+            <div class="get__content-item">
+              <picture
+                ><source srcset="./img/Package.webp" type="image/webp" />
+                <img src="./img/Package.png" alt="Package"
+              /></picture>
+              <h5>Закажите рацион</h5>
+              <p>Выберите рацион для своей собаки. Если не знаете сколько и какой – <a href="#">мы подскажем.</a></p>
+            </div>
+            <div class="get__content-item">
+              <picture
+                ><source srcset="./img/PhoneCall.webp" type="image/webp" />
+                <img src="./img/PhoneCall.png" alt="PhoneCall"
+              /></picture>
+              <h5>Подтвердите заказ</h5>
+              <p>Мы свяжемся с вами для подтверждения заказа и уточнения деталей.</p>
+            </div>
+            <div class="get__content-item">
+              <picture
+                ><source srcset="./img/Clock.webp" type="image/webp" />
+                <img src="./img/Clock.png" alt="Clock"
+              /></picture>
+              <h5>Ожидайте доставки</h5>
+              <p>Привозим заказ на следующий день. По СПб – 350₽, при заказе от 3 500₽ – бесплатно. Лен. область – по договоренности.</p>
+            </div>
+            <div class="get__content-item">
+              <picture
+                ><source srcset="./img/heart.webp" type="image/webp" />
+                <img src="./img/heart.png" alt="heart" class="heart"
+              /></picture>
+              <h5>Радуйте своего питомца</h5>
+              <p>Просто разморозьте рацион: при комнатной температуре – 3 часа, в холодильнике – 12-15 часов.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="answer" id="answer" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+          <div class="answer-content">
+            <div class="content-title">
+              <h2>Частые вопросы</h2>
+            </div>
+            <div class="content-summary">
+              <details>
+                <summary>Не опасны ли бактерии, которые находятся в сыром мясе?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>Надо ли давать дополнительно витамины к рациону BARF?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>А если моя собака уже давно питается промышленным кормом и у нее нет проблем со здоровьем?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>Можно ли смешивать натуральный корм и корм промышленного производства?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>Могу ли я сам составить для своей собаки рацион по системе BARF?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>Присутствует ли в ZOOOV рационах рыба?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>Как перевести питомца на натуральное питание?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>Как готовить рацион ZOOOV?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+              <details>
+                <summary>При переходе на рацион ZOOOV у собаки начались проблемы с ЖКТ.Это нормально?</summary>
+                <p>У здоровых собак отличная иммунная система, готовая ко всем видам бактерий. Рацион BARF как раз укрепит иммунитет вашей собаки и защитит ее от влияния бактерий, которые находятся на улице или даже в вашем доме.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-fluid footer-container">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-aks">
+              <h3 class="footer-aks__title" id="contacts">Контакты</h3>
+              <div class="aks-text">Вы всегда можете с нами связаться по телефону или в мессенджерах</div>
+              <div class="footer-aks__phone"><a href="tel:+79000000000">+7 (900)000-00-00</a></div>
+              <div class="footer-aks__button whatspp"><a href="#">Написать в WhatsApp</a></div>
+              <div class="footer-aks__button telegram"><a href="#">Написать в Telegram</a></div>
+              <div class="footer-aks__info aks-text">Подписывайтесь на наш <a href="#">Instagram</a> и следите за новостями</div>
+            </div>
+            <div class="footer-form">
+              <h3 class="footer-form__title">Остались вопросы?</h3>
+              <div class="aks-text">Напишите нам и мы обязательно подробно на них ответим.</div>
+              <form>
+                <div class="footer-form__input">
+                  <input type="text" placeholder="Имя" />
+                  <input type="mail" placeholder="Email" />
+                </div>
+                <div class="footer-form__textarea">
+                  <textarea cols="83" rows="10" placeholder="Ваш вопрос..."></textarea>
+                </div>
+                <div class="footer-form__check">
+                  <div>
+                    <!-- <input class="footer-form__checkbox" id="one" name="one" type="checkbox">
+<label class="footer-form__label" for="one">Даю согласие на обработку <br> персональных данных</label>  -->
+                    <label class="cont"
+                      >Даю согласие на обработку персональных данных
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <button type="submit" class="footer-form__btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>ИП Коваленко Евгений Геннадьевич ИНН784215731801, адрес производства г. Санкт-Петербург 17-я линия В.О 66, пом. 2/07</p>
+          <p>Публичная оферта</p>
+          <p>Политика конфеденциальности</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.min.js?_v=20221016161418"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js?_v=20221016161418"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
