@@ -1,4 +1,4 @@
-## Zoov : avngrss.github.io/Zoov/ Pages
+## Zoov : https://avngrss.github.io/Zoov/ Pages
 
 - Лендинг магазина
 - Использование gulp для сборки проекта
